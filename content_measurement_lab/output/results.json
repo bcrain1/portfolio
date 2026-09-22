@@ -1,0 +1,73 @@
+{
+  "groups": {
+    "0": {
+      "n": 499,
+      "returned": 168,
+      "rate": 0.3366733466933868,
+      "ci95": [
+        0.29659742820497786,
+        0.37924473408951304
+      ]
+    },
+    "1": {
+      "n": 695,
+      "returned": 445,
+      "rate": 0.6402877697841727,
+      "ci95": [
+        0.6039267905802944,
+        0.675106454426471
+      ]
+    }
+  },
+  "strata": [
+    {
+      "tier": "frequent",
+      "weight": 0.5033500837520938,
+      "0": {
+        "n": 87,
+        "returned": 62,
+        "rate": 0.7126436781609196
+      },
+      "1": {
+        "n": 514,
+        "returned": 390,
+        "rate": 0.7587548638132295
+      }
+    },
+    {
+      "tier": "occasional",
+      "weight": 0.4966499162479062,
+      "0": {
+        "n": 412,
+        "returned": 106,
+        "rate": 0.25728155339805825
+      },
+      "1": {
+        "n": 181,
+        "returned": 55,
+        "rate": 0.30386740331491713
+      }
+    }
+  ],
+  "mature_n": 1194,
+  "excluded_immature": 406,
+  "standardized": {
+    "0": 0.48648811703497585,
+    "1": 0.5328350446545199
+  },
+  "standardized_gap": 0.046346927619544065,
+  "quality": {
+    "unavailable_delivery_rows": 2918,
+    "invalid_rows": 3,
+    "identical_duplicate_rows": 290,
+    "conflicting_id_rows": 2,
+    "accepted_unique_events": 23761,
+    "raw_rows": 26974,
+    "late_over_24h_accepted": 3150,
+    "play_sessions_without_heartbeat": 4
+  },
+  "seed": 41896,
+  "members": 1600,
+  "as_of": "2026-08-29T00:00:00Z",
+  "synthetic": true
+}
