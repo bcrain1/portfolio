@@ -53,7 +53,7 @@ def build():
       p('<b>Decision.</b> Validate instrumentation, monitor playback-quality guardrails, then design a randomized exposure study. Observed return alone does not establish satisfaction or product value.'),
       p('TECHNICAL EVIDENCE','label'),
       p('Inspectable SQL, hand-calculated and failure-mode tests, reproducible CSV/SQLite outputs, and an offline HTML dashboard. Core execution uses the Python standard library; PDF export uses ReportLab.','small'),
-      p('Scope: synthetic data only; no Netflix or employer data. No completed A/B test, causal lift, production deployment, or distributed-scale claim. AI-assisted implementation; source and review walkthrough accompany the project.','small'),
+      p('Scope: synthetic data only; no Netflix or employer data. No completed A/B test, causal lift, production deployment, or distributed-scale claim. Source, tests and an implementation walkthrough accompany the project.','small'),
       PageBreak(),
       p('BRANDON CRAIN  /  SELECTED WORK SAMPLES','eyebrow'),p('Reliable inputs.<br/>Explainable systems.','title'),
       p('Two existing independent demonstrations complement the measurement lab. Their documentation was reviewed for this summary; their full test suites were not rerun for this packet.','subtitle'),
@@ -71,7 +71,7 @@ def build():
       p('<b>Evidence and relevance.</b> Synthetic scenarios cover duplicate and out-of-order events, allocation conflicts, failed checksums and retry. Reliable event semantics and inspectable state are foundations for dependable analytical outputs.'),
       p('Boundary: single-host synthetic system. Application-enforced audit controls are not tamper-proof or WORM storage. Multi-instance concurrency and production access controls require additional work.','small'),
       Spacer(1,8),p('REVIEW & PROVENANCE','label'),
-      p('These are independent, AI-assisted portfolio demonstrations, separate from employment achievements. The new lab includes source, reproducible outputs, tests and a metric-review walkthrough. Source and walkthrough: <link href="https://github.com/bcrain1/portfolio/tree/main/content_measurement_lab" color="#087f8c">github.com/bcrain1/portfolio/tree/main/content_measurement_lab</link>.','small')]
+      p('These are independent portfolio demonstrations, separate from employment achievements. The new lab includes source, reproducible outputs, tests and a metric-review walkthrough. Source and walkthrough: <link href="https://github.com/bcrain1/portfolio/tree/main/content_measurement_lab" color="#087f8c">github.com/bcrain1/portfolio/tree/main/content_measurement_lab</link>.','small')]
     doc.build(story,onFirstPage=footer,onLaterPages=footer)
     print(output)
 

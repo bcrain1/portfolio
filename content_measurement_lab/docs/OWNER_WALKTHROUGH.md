@@ -1,6 +1,6 @@
 # Ten-minute review before sharing
 
-This is an AI-assisted independent demonstration. Review it before representing
+This is an independent demonstration using synthetic data. Review it before representing
 it as work you can discuss and maintain. No claim of owner acceptance is recorded.
 
 1. Open output/dashboard.html. Explain why 406 members are excluded from rates.

@@ -1,6 +1,6 @@
 # New Content Experience Measurement Lab
 
-**Independent portfolio demonstration · Synthetic data · AI-assisted implementation**
+**Independent portfolio demonstration · Synthetic data**
 
 An end-to-end Python/SQL example of defining useful product metrics, repairing
 telemetry, and explaining why a persuasive dashboard result is not a causal claim.
@@ -101,10 +101,9 @@ output/                   generated reproducible example outputs
 - Descriptive adjustment and causal inference are explicitly separated.
 - A reviewer can trace dashboard numbers back to SQL, fixtures and tests.
 
-## Authorship and publication
+## Implementation notes
 
-Created with Codex assistance for Brandon Crain; AI-assisted implementation and
-editorial work are disclosed. This owner-approved portfolio publication does not
+Developed with AI assistance. This owner-approved portfolio publication does not
 establish past employment experience, production deployment, or sole unaided
 authorship. Review and run the implementation before representing it as
 demonstrated competence.
