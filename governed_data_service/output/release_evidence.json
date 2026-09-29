@@ -1,0 +1,19 @@
+{
+  "status": "VERIFIED",
+  "release_date_local": "2026-09-24",
+  "timezone": "America/Chicago",
+  "tests_passed": 15,
+  "tests_failed": 0,
+  "test_seconds": 3.786,
+  "test_exit_code": 0,
+  "python": "3.12",
+  "platform": "Windows",
+  "independent_review": "No essential correctness blocker; three isolated recovery/concurrency probes passed",
+  "probe_suite_limitation": "One-time probes are not checked-in regression coverage",
+  "semantic_reproducibility_runs": 2,
+  "browser_workflow": "PASS: proposal, approval, unchanged historical snapshot, migration and v1 retirement/v2 read",
+  "visual_layout": "Desktop and 390x844 phone viewport inspected; temporary override reset",
+  "pdf_pages": 2,
+  "publication": "LOCAL_RELEASE_NOT_PUBLISHED",
+  "provenance": "Independent synthetic, AI-assisted demonstration; no employer data or code"
+}

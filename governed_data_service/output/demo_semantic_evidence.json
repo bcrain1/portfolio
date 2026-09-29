@@ -1,0 +1,34 @@
+{
+  "scope": "fictional-equipment-inspections-only",
+  "sample_input": {
+    "operation": "update",
+    "inspection_id": "INSP-1001",
+    "expected_revision": 1,
+    "values": {
+      "reading": 2.7
+    },
+    "reason": "Fictional calibration follow-up"
+  },
+  "migration_phases": [
+    "expanded",
+    "backfilled",
+    "contracted"
+  ],
+  "initial": {
+    "schema_phase": "legacy",
+    "record_count": 4,
+    "INSP-1001_reading": 2.4
+  },
+  "final": {
+    "schema_phase": "contracted",
+    "record_count": 4,
+    "INSP-1001_reading": 2.7,
+    "snapshot_count": 5
+  },
+  "invariants": {
+    "historical_snapshot_unchanged": true,
+    "record_count_preserved": true,
+    "migration_order_complete": true
+  },
+  "reproducibility_note": "Semantic values and count invariants are deterministic; snapshot IDs, timestamps, and SQLite/Parquet bytes intentionally vary by run."
+}

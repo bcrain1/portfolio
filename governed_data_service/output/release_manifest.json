@@ -1,0 +1,78 @@
+{
+  ".gitignore": {
+    "sha256": "786f3ebbacab2d867252a637194e708cc9fdd5e33da89a117879c42ff48677c2",
+    "bytes": 82
+  },
+  ".github/workflows/tests.yml": {
+    "sha256": "3dfc954aa17ecb07c057c9d10dd3c5a8b1c0900e760c471f11ef22c642606125",
+    "bytes": 552
+  },
+  "README.md": {
+    "sha256": "19efe0155d318be0824e14ca67e9f10631f90c2f5b20d7327b66c2c2573421c1",
+    "bytes": 2738
+  },
+  "requirements.txt": {
+    "sha256": "19642fc539c86b7fcb5f3fd026906f873e5b6f528e2aaf591ebb9d4a782a1dc6",
+    "bytes": 80
+  },
+  "requirements-pdf.txt": {
+    "sha256": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "bytes": 17
+  },
+  "app.py": {
+    "sha256": "4b652cb90a58de2ad5d2a724d3af65ee6117e22f584ac0b5870934ca2f2f8ec8",
+    "bytes": 6576
+  },
+  "service.py": {
+    "sha256": "186ccf14d7a341530b6c55bc243ec058658c6657d6e4cfc8f1d0c31ddc7d90ae",
+    "bytes": 43769
+  },
+  "generate_demo.py": {
+    "sha256": "44e7990d01733d23434044dacd63634089f5b2898ece6cd4649f935977096cd9",
+    "bytes": 3466
+  },
+  "build_summary.py": {
+    "sha256": "6f596b9ca0e0711bc427f43445c91f175603f984da54c44ca6f66bf2b0073913",
+    "bytes": 6309
+  },
+  "static/index.html": {
+    "sha256": "3abb944625c2874b3ac1d8604f2e89d7ce411f396829eaaec424975a2c4cb253",
+    "bytes": 15770
+  },
+  "tests/test_service.py": {
+    "sha256": "b910cf53c0301be9ba4613c57ff3a1d59f7aa867b5ae3656bfc2c68574490419",
+    "bytes": 23164
+  },
+  "docs/ARCHITECTURE.md": {
+    "sha256": "930354d72e82d0dd61cf9bbebf8c8eeb58a02f3bd54f39da8d50be97b66c5e60",
+    "bytes": 3323
+  },
+  "docs/DATA_CONTRACT.md": {
+    "sha256": "89cc71a5d991d728880758f0b1d8059819c1ac36a32d2dab2f3a2646261f3784",
+    "bytes": 3112
+  },
+  "docs/OWNER_WALKTHROUGH.md": {
+    "sha256": "7af2b98824c31cbe49d30f1f44ade37811208b90aa6636b43b7b5804c9475c67",
+    "bytes": 3884
+  },
+  "docs/VALIDATION.md": {
+    "sha256": "a2634c71a9d0378d613207750bd2efa062f24aea6e3f08247a4bc37fdb63cca5",
+    "bytes": 3590
+  },
+  "docs/RELEASE_CHECKLIST.md": {
+    "sha256": "22d5132074e385c88dee595f778598e7c6cebe7ef47914b028e4cdaba39db472",
+    "bytes": 1301
+  },
+  "output/Brandon_Crain_Governed_Data_Service.pdf": {
+    "sha256": "a07add99fe79c77b9ce3b2b4e4c3a22a6f8bec3b9b92c9d6f39320e294e12f13",
+    "bytes": 5954
+  },
+  "output/release_evidence.json": {
+    "sha256": "e4235f788ab5d2501ff70ba1e50c9e3f885d117843f0ddc11a308932118ef6c9",
+    "bytes": 840
+  },
+  "output/demo_semantic_evidence.json": {
+    "sha256": "2d98b08f6d494a704d2a2038ee36c6ae222a3478bd830814f6e6455b9460dab5",
+    "bytes": 907
+  }
+}
