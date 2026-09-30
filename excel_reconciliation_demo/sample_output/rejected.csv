@@ -1,0 +1,2 @@
+source,row,invoice_id,customer_id,amount,reason
+ledger,8,INV-006,CUST-F,not-money,invalid amount

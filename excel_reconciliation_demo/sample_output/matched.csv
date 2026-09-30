@@ -1,0 +1,4 @@
+invoice_id,customer_id,amount,ledger_row,bank_row
+INV-001,CUST-A,12.50,2,2
+INV-005,CUST-E,3.00,7,5
+INV-007,CUST-G,0.00,9,7

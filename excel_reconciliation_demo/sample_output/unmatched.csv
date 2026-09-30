@@ -1,0 +1,5 @@
+source,row,invoice_id,customer_id,amount,reason
+ledger,3,INV-002,CUST-B,20.00,customer or amount mismatch
+bank,3,INV-002,CUST-B,21.00,customer or amount mismatch
+ledger,4,INV-003,CUST-C,9.00,no counterpart
+bank,6,INV-008,CUST-H,8.00,no counterpart

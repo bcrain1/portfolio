@@ -1,0 +1,199 @@
+{
+  "classification": "synthetic demonstration",
+  "states": {
+    "JOB-A": "COMPLETED",
+    "JOB-B": "CANCELLED",
+    "JOB-C": "REQUESTED"
+  },
+  "effects": [
+    {
+      "event_id": "E-CANCEL-B",
+      "job_id": "JOB-B",
+      "from": "REQUESTED",
+      "to": "CANCELLED"
+    },
+    {
+      "event_id": "E-ASSIGN-A",
+      "job_id": "JOB-A",
+      "from": "REQUESTED",
+      "to": "ASSIGNED"
+    },
+    {
+      "event_id": "E-START-A",
+      "job_id": "JOB-A",
+      "from": "ASSIGNED",
+      "to": "ACTIVE"
+    },
+    {
+      "event_id": "E-COMPLETE-A",
+      "job_id": "JOB-A",
+      "from": "ACTIVE",
+      "to": "COMPLETED"
+    }
+  ],
+  "dead_letters": [
+    {
+      "event_id": "E-CANCEL-B",
+      "job_id": "JOB-A",
+      "kind": "cancel",
+      "reason": "ID_CONFLICT"
+    },
+    {
+      "event_id": "E-START-B",
+      "job_id": "JOB-B",
+      "kind": "start",
+      "reason": "INVALID_TRANSITION"
+    },
+    {
+      "event_id": "E-UNKNOWN",
+      "job_id": "JOB-A",
+      "kind": "launch",
+      "reason": "UNKNOWN_JOB_OR_KIND"
+    },
+    {
+      "event_id": "E-ASSIGN-C",
+      "job_id": "JOB-C",
+      "kind": "assign",
+      "reason": "RETRY_EXHAUSTED",
+      "cause": "SIMULATED_TRANSIENT_FAILURE"
+    }
+  ],
+  "audit": [
+    {
+      "sequence": 1,
+      "tick": 1,
+      "event_id": "E-START-A",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 1,
+      "reason": "WAITING_FOR_PREDECESSOR"
+    },
+    {
+      "sequence": 2,
+      "tick": 2,
+      "event_id": "E-ASSIGN-A",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 1,
+      "reason": "SIMULATED_TRANSIENT_FAILURE"
+    },
+    {
+      "sequence": 3,
+      "tick": 3,
+      "event_id": "E-CANCEL-B",
+      "outcome": "APPLIED",
+      "attempt": 1,
+      "before": "REQUESTED",
+      "after": "CANCELLED"
+    },
+    {
+      "sequence": 4,
+      "tick": 4,
+      "event_id": "E-CANCEL-B",
+      "outcome": "DUPLICATE_IGNORED"
+    },
+    {
+      "sequence": 5,
+      "tick": 5,
+      "event_id": "E-CANCEL-B",
+      "outcome": "ID_CONFLICT"
+    },
+    {
+      "sequence": 6,
+      "tick": 6,
+      "event_id": "E-START-B",
+      "outcome": "INVALID_TRANSITION"
+    },
+    {
+      "sequence": 7,
+      "tick": 7,
+      "event_id": "E-ASSIGN-C",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 1,
+      "reason": "SIMULATED_TRANSIENT_FAILURE"
+    },
+    {
+      "sequence": 8,
+      "tick": 8,
+      "event_id": "E-COMPLETE-A",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 1,
+      "reason": "WAITING_FOR_PREDECESSOR"
+    },
+    {
+      "sequence": 9,
+      "tick": 9,
+      "event_id": "E-UNKNOWN",
+      "outcome": "UNKNOWN_JOB_OR_KIND"
+    },
+    {
+      "sequence": 10,
+      "tick": 10,
+      "event_id": "E-START-A",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 2,
+      "reason": "WAITING_FOR_PREDECESSOR"
+    },
+    {
+      "sequence": 11,
+      "tick": 11,
+      "event_id": "E-ASSIGN-A",
+      "outcome": "APPLIED",
+      "attempt": 2,
+      "before": "REQUESTED",
+      "after": "ASSIGNED"
+    },
+    {
+      "sequence": 12,
+      "tick": 12,
+      "event_id": "E-ASSIGN-C",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 2,
+      "reason": "SIMULATED_TRANSIENT_FAILURE"
+    },
+    {
+      "sequence": 13,
+      "tick": 13,
+      "event_id": "E-COMPLETE-A",
+      "outcome": "RETRY_QUEUED",
+      "attempt": 2,
+      "reason": "WAITING_FOR_PREDECESSOR"
+    },
+    {
+      "sequence": 14,
+      "tick": 14,
+      "event_id": "E-START-A",
+      "outcome": "APPLIED",
+      "attempt": 3,
+      "before": "ASSIGNED",
+      "after": "ACTIVE"
+    },
+    {
+      "sequence": 15,
+      "tick": 15,
+      "event_id": "E-ASSIGN-C",
+      "outcome": "RETRY_EXHAUSTED",
+      "cause": "SIMULATED_TRANSIENT_FAILURE"
+    },
+    {
+      "sequence": 16,
+      "tick": 16,
+      "event_id": "E-COMPLETE-A",
+      "outcome": "APPLIED",
+      "attempt": 3,
+      "before": "ACTIVE",
+      "after": "COMPLETED"
+    }
+  ],
+  "summary": {
+    "applied_effects": 4,
+    "dead_letters": 4,
+    "outcomes": {
+      "RETRY_QUEUED": 7,
+      "APPLIED": 4,
+      "DUPLICATE_IGNORED": 1,
+      "ID_CONFLICT": 1,
+      "INVALID_TRANSITION": 1,
+      "UNKNOWN_JOB_OR_KIND": 1,
+      "RETRY_EXHAUSTED": 1
+    }
+  }
+}

@@ -3,6 +3,33 @@
 Selected independent work demonstrating metric design, trustworthy data pipelines,
 and clear analytical decisions. These projects use synthetic data and are separate from employment achievements.
 
+## Excel Automation & Data Reconciliation Workbench
+
+A runnable miniature reconciles two synthetic CSV extracts with exact decimal
+amounts, conservative matching, duplicate quarantine and row-level exceptions.
+All 14 input rows are accounted for. Outputs can be imported into Excel.
+
+- [Run the demonstration](excel_reconciliation_demo/README.md)
+- [Inspect matched, unmatched and duplicate outputs](excel_reconciliation_demo/sample_output)
+- [12 automated tests](excel_reconciliation_demo/tests/test_reconcile.py)
+
+This publishes a fixed-schema CSV workflow; the full configurable workbook
+application, transactional migration engine and packaging remain private.
+
+## Reliable Event-Driven Operations Backend
+
+A runnable miniature handles synthetic job events with selected lifecycle rules,
+duplicate suppression, conflicting-ID rejection, recoverable early events,
+bounded retries and inspectable dead letters.
+
+- [Run the demonstration](event_operations_demo/README.md)
+- [Inspect the event and state evidence](event_operations_demo/sample_output/evidence.json)
+- [14 automated tests](event_operations_demo/tests/test_operations.py)
+
+This publishes an in-memory queue demonstration; the full integrated backend,
+durable persistence, allocation, backup/retention and deployment tooling remain
+private. Idempotency in this miniature does not survive process restart.
+
 ## New Content Experience Measurement Lab
 
 **Question:** Does higher observed return justify expanding a new live-content experience?

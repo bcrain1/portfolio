@@ -1,0 +1,16 @@
+{
+  "jobs": {"JOB-A": "REQUESTED", "JOB-B": "REQUESTED", "JOB-C": "REQUESTED"},
+  "max_attempts": 3,
+  "transient_failures": {"E-ASSIGN-A": 1, "E-ASSIGN-C": 10},
+  "events": [
+    {"event_id": "E-START-A", "job_id": "JOB-A", "kind": "start"},
+    {"event_id": "E-ASSIGN-A", "job_id": "JOB-A", "kind": "assign"},
+    {"event_id": "E-CANCEL-B", "job_id": "JOB-B", "kind": "cancel"},
+    {"event_id": "E-CANCEL-B", "job_id": "JOB-B", "kind": "cancel"},
+    {"event_id": "E-CANCEL-B", "job_id": "JOB-A", "kind": "cancel"},
+    {"event_id": "E-START-B", "job_id": "JOB-B", "kind": "start"},
+    {"event_id": "E-ASSIGN-C", "job_id": "JOB-C", "kind": "assign"},
+    {"event_id": "E-COMPLETE-A", "job_id": "JOB-A", "kind": "complete"},
+    {"event_id": "E-UNKNOWN", "job_id": "JOB-A", "kind": "launch"}
+  ]
+}

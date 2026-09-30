@@ -1,0 +1,34 @@
+name: Portfolio miniatures
+on:
+  push:
+    paths:
+      - 'excel_reconciliation_demo/**'
+      - 'event_operations_demo/**'
+      - '.github/workflows/portfolio-miniatures.yml'
+  pull_request:
+    paths:
+      - 'excel_reconciliation_demo/**'
+      - 'event_operations_demo/**'
+      - '.github/workflows/portfolio-miniatures.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+        project: [excel_reconciliation_demo, event_operations_demo]
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run miniature and acceptance tests
+        run: |
+          if [ -f reconcile.py ]; then python reconcile.py; else python operations.py; fi
+          python -m unittest discover -s tests -v

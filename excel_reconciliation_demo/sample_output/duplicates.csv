@@ -1,0 +1,4 @@
+source,row,invoice_id,customer_id,amount,reason
+ledger,5,INV-004,CUST-D,15.00,ambiguous invoice key; all valid occurrences held
+ledger,6,INV-004,CUST-D,15.00,ambiguous invoice key; all valid occurrences held
+bank,4,INV-004,CUST-D,15.00,ambiguous invoice key; all valid occurrences held

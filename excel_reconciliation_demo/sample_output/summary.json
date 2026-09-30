@@ -1,0 +1,16 @@
+{
+  "classification": "synthetic demonstration",
+  "summary": {
+    "input_rows": 14,
+    "matched_pairs": 3,
+    "unmatched_rows": 4,
+    "duplicate_rows": 3,
+    "rejected_rows": 1,
+    "accounted_rows": 14,
+    "matched_total": "15.50"
+  },
+  "input_sha256": {
+    "ledger.csv": "8f017b42b95f1e50ffe4e7f813ad18042b682740b03640bfa074aeccfc239179",
+    "bank.csv": "7a59b4f7e18023bb680a81e9fa3e64094bb1c02d909b9b6808cd6b0c1484cfef"
+  }
+}
