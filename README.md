@@ -74,6 +74,31 @@ demonstration. The role selector is intentionally impersonable and is not
 production authentication. Run the Python service locally to use the review
 console; GitHub displays its HTML source.
 
+## Infrastructure Efficiency Decision Lab
+
+**Question:** Which resource-efficiency changes deserve a controlled trial when lower cost can hide worse latency or a different workload mix?
+
+A runnable Python/SQLite miniature reconciles fictional infrastructure costs to
+successful work, quarantines invalid comparison windows, checks latency and error
+guardrails, and exposes misleading pooled savings from workload mix.
+
+- [Project, reproduction instructions and walkthrough](infrastructure_efficiency_decision_lab/README.md)
+- [Decision memo](infrastructure_efficiency_decision_lab/output/FINDINGS.md)
+- [Offline dashboard source/download](infrastructure_efficiency_decision_lab/output/dashboard.html)
+- [Cost ledger](infrastructure_efficiency_decision_lab/output/accepted_cost_ledger.csv)
+- [Acceptance tests](infrastructure_efficiency_decision_lab/tests/test_lab.py)
+
+Download this repository using **Code → Download ZIP**, extract it, and open
+`infrastructure_efficiency_decision_lab/output/dashboard.html` in a browser.
+GitHub's file viewer shows HTML source; the dashboard runs locally without
+accounts, credentials or paid services.
+
+**Evidence:** 20 Python tests, 24 dashboard control combinations, and two actual
+Chrome CSV downloads checked. Exported rows preserve synthetic-data caveats,
+accepted-period coverage and guardrail decisions. All data and prices are
+fictional; no Netflix affiliation, actual production savings or causal impact
+is claimed.
+
 ## Implementation notes
 
 Developed with AI assistance. Each project documents its methods, reproducible checks and limitations; these demonstrations are separate from employment achievements.

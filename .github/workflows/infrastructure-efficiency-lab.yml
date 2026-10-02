@@ -1,0 +1,37 @@
+name: Infrastructure efficiency lab
+on:
+  push:
+    paths:
+      - 'infrastructure_efficiency_decision_lab/**'
+      - '.github/workflows/infrastructure-efficiency-lab.yml'
+  pull_request:
+    paths:
+      - 'infrastructure_efficiency_decision_lab/**'
+      - '.github/workflows/infrastructure-efficiency-lab.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    defaults:
+      run:
+        working-directory: infrastructure_efficiency_decision_lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run acceptance and reproducibility tests
+        run: python -B -m unittest discover -s tests -v
+      - name: Build dashboard and check controls
+        run: |
+          python -B lab.py
+          node tests/dashboard_checks.cjs
+
