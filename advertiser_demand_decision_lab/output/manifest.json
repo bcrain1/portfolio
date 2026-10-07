@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "seed": 42808,
+  "as_of": "2026-10-07T00:00:00Z",
+  "files": {
+    "dashboard.html": "3465175907c2ea960c95f37a09adc03b5cd8719acef7045bf3af283cd5102147",
+    "data.json": "bf0432db3767e67ac5b7491775c00658572aa8a7fc2909fac645311080248c1b",
+    "empty_advertisers.csv": "44c175bb226e31e4736dfef617cd795cf67711b848658480a1fc075079b33969",
+    "empty_events.csv": "44c175bb226e31e4736dfef617cd795cf67711b848658480a1fc075079b33969",
+    "empty_metrics.csv": "44c175bb226e31e4736dfef617cd795cf67711b848658480a1fc075079b33969",
+    "launch_friction_advertisers.csv": "51eb5a7d1392f08ebd5a9349f44f4b8deed982fe3cf19768fbe2b45fe2e23144",
+    "launch_friction_events.csv": "4aa475c99ed8af433704d92ce06fd8874a9ed611b3d89e61124475f6bac4f2ec",
+    "launch_friction_metrics.csv": "cac5ddc31a68e8d2b599a5bc4499d8f25278e235e42c05466eff114ef2ea0f07",
+    "mix_shift_advertisers.csv": "9214aabbe2310b9f27a51ec41eaad4c926149c509603a908a87829aaa090ec5d",
+    "mix_shift_events.csv": "2c8a5508ad94c7e5a04f2df3a75fd256ea8cc1a12699fb6d7a0c33cfad1d8626",
+    "mix_shift_metrics.csv": "9360889c0ce638cf6dd51ce95154650f5827d90f59e03dd9bce96db319eebc0f",
+    "planning_friction_advertisers.csv": "51eb5a7d1392f08ebd5a9349f44f4b8deed982fe3cf19768fbe2b45fe2e23144",
+    "planning_friction_events.csv": "6f4c319955691d580be191eee2888a5a9d1c558ffa27d6d18f001077296289da",
+    "planning_friction_metrics.csv": "31b64a7c8fe366a6596f5cd8602ceba78ea33ad2e45ce8623deb98793a061eb4",
+    "telemetry_gap_advertisers.csv": "76094b1a442a3ce316a53a422977d12516fe8b8c9c407b34f14993d70c8b048d",
+    "telemetry_gap_events.csv": "cc5564e3304edefa06c35ef7fe99273ef6b53a309e45cfc1e51808b2f1abddbb",
+    "telemetry_gap_metrics.csv": "4f1608c0f6541a5ccfef4daf559c44915b6cf4042b74833799777f8406842cae"
+  }
+}

@@ -1,0 +1,23 @@
+name: Advertiser Demand Decision Lab
+on:
+  push:
+    paths: ['advertiser_demand_decision_lab/**', '.github/workflows/advertiser-demand.yml']
+  pull_request:
+    paths: ['advertiser_demand_decision_lab/**', '.github/workflows/advertiser-demand.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B -m unittest discover -s tests -v
+        working-directory: advertiser_demand_decision_lab
+      - run: python -B build.py
+        working-directory: advertiser_demand_decision_lab

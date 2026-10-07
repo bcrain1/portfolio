@@ -99,6 +99,33 @@ accepted-period coverage and guardrail decisions. All data and prices are
 fictional; no Netflix affiliation, actual production savings or causal impact
 is claimed.
 
+## Advertiser Demand Decision Lab
+
+**Question:** Should an advertiser team investigate planning completion or campaign-launch follow-through first, and when would that recommendation change?
+
+An independent Python/SQL analysis uses fictional advertiser events, mature
+cohort funnels, telemetry checks, fixed-mix comparisons and recovery scenarios
+to build a conditional recommendation. Stage-priority scores are diagnostic;
+they are not predicted launches, revenue or causal effects.
+
+- [Project and reproduction instructions](advertiser_demand_decision_lab/README.md)
+- [Two-page case study](advertiser_demand_decision_lab/output/CASE_STUDY.pdf)
+- [Metric definitions and limitations](advertiser_demand_decision_lab/docs/METRICS.md)
+- [Offline dashboard source/download](advertiser_demand_decision_lab/output/dashboard.html)
+- [Tests](advertiser_demand_decision_lab/tests/test_lab.py)
+
+Download this repository using **Code > Download ZIP**, extract it, and open
+`advertiser_demand_decision_lab/output/dashboard.html` in a browser. GitHub
+shows HTML source; the self-contained demo runs locally without accounts,
+credentials or network access.
+
+**Evidence:** 30 automated tests, 500 dashboard control combinations and six
+actual browser downloads checked. Independent mathematical and engineering
+reviews and deterministic rebuild checks are documented in the project.
+All data is fictional; no Netflix affiliation, employer-data use, production
+deployment, causal lift or advertising-employment experience is claimed.
+The original Content Measurement Lab remains a separate, preserved project.
+
 ## Implementation notes
 
 Developed with AI assistance. Each project documents its methods, reproducible checks and limitations; these demonstrations are separate from employment achievements.
