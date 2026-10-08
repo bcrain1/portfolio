@@ -1,6 +1,6 @@
 # Advertiser Demand Decision Lab
 
-**Independent, AI-assisted portfolio demonstration. All advertisers and events are fictional. No Netflix, employer or client data. Not a production deployment, causal study or claim of advertising employment experience.**
+
 
 Which stage deserves investigation first: completing a campaign plan, or launching a completed plan? This runnable Python/SQL case study connects comparable cohorts, data-quality gates, assumption sensitivity and a business recommendation. It is a separate entry adapted from the Content Measurement Lab; the original remains unchanged.
 
@@ -48,4 +48,6 @@ The included PDF can optionally be rebuilt with `python -B build_case_study.py` 
 
 This is a diagnostic prototype, not an ad auction, budget allocator, causal estimator, production ML model or demand forecast. Real advertiser data access, instrumentation, domain review, repeated-attempt handling, intervention costs, seasonality, media supply, revenue outcomes and prospective evaluation remain outside scope. Source completeness is asserted by a synthetic flag; a real system needs independent reconciliation. The thresholds are illustrative policy, not empirically calibrated guarantees. A recovery in planning completion is not necessarily a recovery in final launches.
 
-Published with owner approval as an independent portfolio entry. This publication does not imply an application submission.
+## Data and methodology
+
+Advertisers and events are fictional, with designed scenario outcomes. No employer or client data is used. The analysis supports diagnostic comparison; it does not measure production impact or causal lift.

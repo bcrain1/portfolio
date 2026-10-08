@@ -1,6 +1,6 @@
 # Other selected work samples
 
-Two runnable miniatures of the existing independent Upwork portfolio projects
+Two focused workflows for reconciliation and event processing
 are now included alongside the measurement lab. Both use synthetic inputs,
 standard-library Python, reproducible sample outputs and their own tests. They
 were prepared for public evaluation on September 30, 2026; the complete original
@@ -45,12 +45,11 @@ external side effects, multi-worker coordination or production delivery guarante
 
 ## Provenance and boundaries
 
-These are AI-assisted independent demonstrations, separate from employment
-achievements. They contain no real client data or claim of paid-client usage,
-production deployment, measured business savings or tamper-proof audit storage.
+All inputs are synthetic. Results describe local execution, without production
+usage, measured business savings or tamper-proof audit storage.
 Historical full-application test counts and videos are not evidence for these
-miniatures. The existing selected-work-samples PDF remains a historical overview
-of the larger applications; the linked miniature READMEs define the code actually
+miniatures. The selected-work-samples PDF summarizes the larger applications from
+documentation review, without rerunning their full test suites; the linked miniature READMEs define the code actually
 published here.
 
 No software license was added or changed. The repository currently has no

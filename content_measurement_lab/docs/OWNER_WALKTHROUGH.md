@@ -1,7 +1,7 @@
 # Ten-minute review before sharing
 
-This is an independent demonstration using synthetic data. Review it before representing
-it as work you can discuss and maintain. No claim of owner acceptance is recorded.
+Trace the decision from telemetry and cohort definitions through SQL, dashboard
+results and measurement limits. The exercises use the reproducible synthetic fixture.
 
 1. Open output/dashboard.html. Explain why 406 members are excluded from rates.
 2. Compare the exposed and unexposed return rates. Explain why the 30.4-point

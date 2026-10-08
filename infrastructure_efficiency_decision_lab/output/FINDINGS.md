@@ -1,7 +1,5 @@
 # Infrastructure Efficiency Decision Lab — findings
 
-**Synthetic decision example. Fictional prices and simulated telemetry; no production savings claim.**
-
 ## Decision
 
 Advance the batch change to a controlled trial; hold the interactive change despite attractive modeled cost reductions because its latency guardrail fails. Streaming has a smaller modeled improvement. These are hypotheses to validate, not deployment approval.
@@ -23,6 +21,10 @@ Accepted 165 of 168 hours across all services/scenarios. Excluded hours: 2026-01
 ## Next experiment
 
 For a real controlled trial, randomize or otherwise predefine comparable cohorts; preserve task semantics and workload mix; observe raw latency distributions, errors, saturation and operational burden; pre-register rollback thresholds. Validate telemetry completeness and actual contract prices. Recheck costs with uncertainty, rather than converting this simulation into an ROI promise.
+
+## Data and methodology
+
+Fictional prices and simulated telemetry; cost changes are modeled comparisons, not measured production savings.
 
 ## Limitations
 

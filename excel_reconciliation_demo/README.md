@@ -1,12 +1,8 @@
-# Excel Automation & Data Reconciliation Workbench — runnable miniature
+# Excel Automation & Data Reconciliation Workbench
 
 **Question:** Can two extracts be reconciled without hiding ambiguous keys or losing rejected rows?
 
-This small, runnable Python demonstration compares two fictional invoice extracts.
-It publishes a focused slice of the larger independent workbench: typed amount
-normalization, conservative matching, exception routing, row-level evidence and
-repeatable outputs. It uses synthetic data only and was developed with AI assistance.
-It is not paid-client work or a production migration tool.
+Reconcile invoice extracts with exact amounts, conservative matching, exception routing and row-level evidence. The Python workflow accounts for every input row and produces repeatable outputs that can be imported into Excel.
 
 ## Run it
 
@@ -58,6 +54,8 @@ remain available for inspection. Native XLSX editing and Excel UI compatibility
 are outside this miniature and have not been validated here.
 
 ## Checks and boundaries
+
+The fixed-schema invoice extracts are synthetic. This public workflow covers CSV reconciliation; the larger private application and its additional capabilities are distinguished below.
 
 The 12 automated tests cover hand-specified fixture results, row conservation,
 strict currency handling, zero/empty inputs, ambiguous and invalid keys,

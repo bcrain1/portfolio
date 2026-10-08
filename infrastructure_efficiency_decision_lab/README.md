@@ -1,8 +1,8 @@
 # Infrastructure Efficiency Decision Lab
 
-An independent, synthetic analytics case study: decide which infrastructure changes deserve a controlled trial by connecting cost allocation, successful work, latency guardrails and workload mix.
+Decide which infrastructure changes deserve a controlled trial by connecting cost allocation, successful work, latency guardrails and workload mix.
 
-**No Netflix data, affiliation or measured production savings.** The role informed the analytical questions; all workloads, prices and performance scenarios are fictional.
+
 
 ## Start here
 
@@ -31,6 +31,10 @@ GitHub displays HTML source. Download the repository ZIP, extract it, then open 
 - Preserve an auditable SQLite ledger, SQL aggregations, quality report and reproducible file hashes.
 
 The default seven-day example retains 165 of 168 hours after deliberately injected faults. Batch shows 20.13% lower modeled unit cost and passes the configured guardrails. Interactive shows 25.35% lower cost but fails its 250 ms latency budget at 300 ms. Changing workload mix alone produces a misleading 25.69% pooled reduction; baseline-mix standardization reduces that to approximately zero.
+
+## Data and methodology
+
+All workloads, prices and performance scenarios are fictional. Reported cost changes are modeled comparisons, not measured production savings. No employer data is used.
 
 ## Model and architecture
 

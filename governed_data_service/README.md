@@ -1,8 +1,8 @@
 # Governed Data Service
 
-An independent, synthetic portfolio demonstration of a local data service for fictional equipment inspections. An analyst proposes a create, update, or soft delete; a separate reviewer decides it; an approved mutation creates an audit event and a new immutable Parquet snapshot.
+Review data corrections without losing history or exposing a half-published dataset. An analyst proposes a create, update, or soft delete; a separate reviewer decides it; an approved mutation creates an audit event and a new immutable Parquet snapshot.
 
-This project contains no employer code, identifiers, schemas, formulas, datasets, or performance claims. It is a local single-host demo, not a production deployment.
+
 
 ## Run locally
 
@@ -47,5 +47,5 @@ The design does not claim production IAM, cloud durability, tamper-proof auditin
 
 ## Implementation notes
 
-Developed with AI assistance; synthetic data and independent demonstration, not employer work.
+Equipment inspections and business rules are synthetic. The service runs on a single host and contains no employer code or data. Development used AI assistance; the source, tests and walkthrough document the implementation and its limits.
 

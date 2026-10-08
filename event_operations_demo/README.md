@@ -1,13 +1,9 @@
-# Reliable Event-Driven Operations Backend — runnable miniature
+# Reliable Event-Driven Operations Backend
 
 **Question:** Can duplicate, early and temporarily failing events be handled with
 bounded retries and a clear record of what actually changed?
 
-This dependency-free Python miniature processes a synthetic queue for three
-fictional jobs. It shows a selected state machine, event-ID conflict detection,
-process-local duplicate suppression, failure injection, bounded retries and
-inspectable dead letters. Developed with AI assistance; an independent portfolio
-demonstration, not paid-client work or a production service.
+Process repeated and out-of-order job events with a clear record of what changed. The dependency-free Python workflow combines lifecycle rules, event-ID conflict detection, process-local duplicate suppression, bounded retries and inspectable dead letters.
 
 ## Run it
 
@@ -63,6 +59,10 @@ The 14 automated tests cover explicit final states, duplicates, conflicting IDs,
 transient recovery, exhausted retries, out-of-order delivery, absent predecessors,
 terminal-state safety, unknown inputs, pre-mutation validation, same-process
 replay, no-op transitions, retry bounds and exact sample-output reproduction.
+
+## Data and implementation scope
+
+The queue and three jobs are synthetic. Processing is local and in memory.
 
 ## Public/private boundary
 

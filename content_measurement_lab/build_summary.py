@@ -32,20 +32,20 @@ class GapChart(Flowable):
 def footer(c,doc):
     c.setStrokeColor(LINE);c.line(54,43,558,43)
     c.setFont('Helvetica',8);c.setFillColor(MUTED)
-    c.drawString(54,29,'BRANDON CRAIN  |  Independent synthetic work samples  |  September 2026')
+    c.drawString(54,29,'BRANDON CRAIN  |  Analytics and data systems  |  September 2026')
     c.drawRightString(558,29,f'{doc.page} / 2')
 
 def build():
     r=json.loads((ROOT/'output/results.json').read_text())
     output=ROOT/'output/Brandon_Crain_Selected_Work_Samples.pdf'
     doc=SimpleDocTemplate(str(output),pagesize=(612,792),rightMargin=54,leftMargin=54,topMargin=40,bottomMargin=57,
-      title='Brandon Crain - Selected Analytics and Data Systems Work Samples',author='Brandon Crain',subject='Independent synthetic portfolio demonstrations')
+      title='Brandon Crain - Selected Analytics and Data Systems Work Samples',author='Brandon Crain',subject='Analytics and data systems work samples')
     a,b=r['groups']['1'],r['groups']['0'];raw=100*(a['rate']-b['rate']);adj=100*r['standardized_gap']
     story=[p('BRANDON CRAIN  /  ANALYTICS & DATA SYSTEMS','eyebrow'),p('Selected work samples','title'),
       p('Metric design. Trustworthy data. Decisions that survive scrutiny.<br/>Austin, TX | bmcrain1@gmail.com | linkedin.com/in/brandon-crain','subtitle'),
       p('01  NEW CONTENT EXPERIENCE MEASUREMENT LAB','eyebrow'),
       p('Does higher observed return justify expanding a new live experience?','h'),
-      p('This independent Python/SQL demonstration follows a product question from synthetic telemetry to a decision memo. It connects explicit eligibility rules, event quality, member-level metrics, a filterable dashboard, and an explanation of selection bias.'),
+      p('The Python/SQL pipeline turns a product question into a traceable decision memo. It connects explicit eligibility rules, event quality, member-level metrics, a filterable dashboard, and an explanation of selection bias.'),
       p('<b>What is implemented.</b> Seeded event generation; duplicate and conflicting-ID handling; event-time sessionization; first-day adoption and engagement; seven-day return; Wilson intervals; and descriptive standardization by pre-index activity.'),
       GapChart(raw,adj),Spacer(1,9),
       p(f'<b>Observed in the simulation:</b> {r["mature_n"]:,} of {r["members"]:,} members have seven-day event-time maturity. Return is {a["rate"]:.1%} among exposed members ({a["returned"]}/{a["n"]}) and {b["rate"]:.1%} among unexposed members ({b["returned"]}/{b["n"]}). Another {r["excluded_immature"]} members are excluded from all displayed member rates.'),
@@ -56,7 +56,7 @@ def build():
       p('Scope: synthetic data only; no Netflix or employer data. No completed A/B test, causal lift, production deployment, or distributed-scale claim. Source, tests and an implementation walkthrough accompany the project.','small'),
       PageBreak(),
       p('BRANDON CRAIN  /  SELECTED WORK SAMPLES','eyebrow'),p('Reliable inputs.<br/>Explainable systems.','title'),
-      p('Two existing independent demonstrations complement the measurement lab. Their documentation was reviewed for this summary; their full test suites were not rerun for this packet.','subtitle'),
+      p('Two larger private applications complement the measurement lab. This summary reflects documentation review; their full test suites were not rerun. The public CSV and in-memory examples implement narrower workflows.','subtitle'),
       p('02  DATA RECONCILIATION WORKBENCH','eyebrow'),
       p('Make migration exceptions visible before trusting the output.','h'),
       p('<b>Question.</b> How can inconsistent business records be reconciled without silently accepting ambiguous matches or duplicating records on a rerun?'),
@@ -71,7 +71,7 @@ def build():
       p('<b>Evidence and relevance.</b> Synthetic scenarios cover duplicate and out-of-order events, allocation conflicts, failed checksums and retry. Reliable event semantics and inspectable state are foundations for dependable analytical outputs.'),
       p('Boundary: single-host synthetic system. Application-enforced audit controls are not tamper-proof or WORM storage. Multi-instance concurrency and production access controls require additional work.','small'),
       Spacer(1,8),p('REVIEW & PROVENANCE','label'),
-      p('These are independent portfolio demonstrations, separate from employment achievements. The new lab includes source, reproducible outputs, tests and a metric-review walkthrough. Source and walkthrough: <link href="https://github.com/bcrain1/portfolio/tree/main/content_measurement_lab" color="#087f8c">github.com/bcrain1/portfolio/tree/main/content_measurement_lab</link>.','small')]
+      p('The applications use fictional data. The measurement lab includes source, reproducible outputs, tests and a metric-review walkthrough. Private-application capabilities above are not claims about the narrower public examples. Source and walkthrough: <link href="https://github.com/bcrain1/portfolio/tree/main/content_measurement_lab" color="#087f8c">github.com/bcrain1/portfolio/tree/main/content_measurement_lab</link>.','small')]
     doc.build(story,onFirstPage=footer,onLaterPages=footer)
     print(output)
 

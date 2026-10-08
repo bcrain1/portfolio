@@ -1,6 +1,6 @@
 # Release validation
 
-Release: 2026-09-24 America/Chicago (2026-09-25 UTC). Independent synthetic, AI-assisted local demonstration.
+Release: 2026-09-24 America/Chicago (2026-09-25 UTC). Local service release using synthetic inspection data.
 
 ## Automated checks
 

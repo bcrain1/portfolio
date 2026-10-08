@@ -233,9 +233,6 @@ def findings(r):
     fmt = lambda x: f"{x*100:.1f}%" if x is not None else "not estimable"
     return f"""# Measurement decision memo
 
-Independent synthetic demonstration; no Netflix or employer data. Seed {r['seed']}.
-Snapshot: {r['as_of']}. This is an illustrative result, not a business finding.
-
 ## Decision
 Do not infer an incremental retention benefit from the raw comparison. Validate
 instrumentation and exposure logging, then design a randomized exposure study
@@ -253,6 +250,10 @@ The simulator deliberately assigns exposure more often to frequent viewers.
 Return probability depends on baseline activity, with no causal exposure effect.
 Standardization demonstrates this measured confounder; it does not prove causal
 identification in real data or eliminate unmeasured selection bias.
+
+## Data and methodology
+Synthetic telemetry; no employer or personal viewing data. Seed {r['seed']};
+snapshot {r['as_of']}. Results describe the simulation, not measured business impact.
 
 ## Measurement cautions
 Eligibility is indexed before exposure. Exposure is within the first hour;

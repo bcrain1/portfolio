@@ -1,8 +1,5 @@
 # Measurement decision memo
 
-Independent synthetic demonstration; no Netflix or employer data. Seed 41896.
-Snapshot: 2026-08-29T00:00:00Z. This is an illustrative result, not a business finding.
-
 ## Decision
 Do not infer an incremental retention benefit from the raw comparison. Validate
 instrumentation and exposure logging, then design a randomized exposure study
@@ -20,6 +17,10 @@ The simulator deliberately assigns exposure more often to frequent viewers.
 Return probability depends on baseline activity, with no causal exposure effect.
 Standardization demonstrates this measured confounder; it does not prove causal
 identification in real data or eliminate unmeasured selection bias.
+
+## Data and methodology
+Synthetic telemetry; no employer or personal viewing data. Seed 41896;
+snapshot 2026-08-29T00:00:00Z. Results describe the simulation, not measured business impact.
 
 ## Measurement cautions
 Eligibility is indexed before exposure. Exposure is within the first hour;

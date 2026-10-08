@@ -1,7 +1,6 @@
 # Brandon Crain — Analytics & Data Systems
 
-Selected independent work demonstrating metric design, trustworthy data pipelines,
-and clear analytical decisions. These projects use synthetic data and are separate from employment achievements.
+Projects in metric design, trustworthy data pipelines, and clear analytical decisions. Explore reproducible analyses, reviewed data changes, reconciliation, and reliable event processing.
 
 ## Excel Automation & Data Reconciliation Workbench
 
@@ -103,7 +102,7 @@ is claimed.
 
 **Question:** Should an advertiser team investigate planning completion or campaign-launch follow-through first, and when would that recommendation change?
 
-An independent Python/SQL analysis uses fictional advertiser events, mature
+A Python/SQL analysis uses fictional advertiser events, mature
 cohort funnels, telemetry checks, fixed-mix comparisons and recovery scenarios
 to build a conditional recommendation. Stage-priority scores are diagnostic;
 they are not predicted launches, revenue or causal effects.
@@ -128,5 +127,5 @@ The original Content Measurement Lab remains a separate, preserved project.
 
 ## Implementation notes
 
-Developed with AI assistance. Each project documents its methods, reproducible checks and limitations; these demonstrations are separate from employment achievements.
+The projects use synthetic data and were developed with AI assistance. Each documents its methods, reproducible checks and limitations. Project results are separate from employment achievements; private-application capabilities are distinguished from the public examples.
 

@@ -230,7 +230,6 @@ def write_csv(path,rows,fields):
 
 def findings(result):
     lines=['# Infrastructure Efficiency Decision Lab — findings','',
-      '**Synthetic decision example. Fictional prices and simulated telemetry; no production savings claim.**','',
       '## Decision','',
       'Advance the batch change to a controlled trial; hold the interactive change despite attractive modeled cost reductions because its latency guardrail fails. Streaming has a smaller modeled improvement. These are hypotheses to validate, not deployment approval.','',
       '| Service | Modeled unit-cost change | Worst interval p95 / budget | Decision |','|---|---:|---:|---|']
@@ -241,7 +240,7 @@ def findings(result):
       '## Coverage and reconciliation','',f"Accepted {result['quality']['accepted_hours']} of {result['quality']['input_hours']} hours across all services/scenarios. Excluded hours: {', '.join(result['quality']['excluded_hours'])}. Duplicate/conflict/missing-value evidence is in quality.json. Every component and shared allocation reconciles exactly in integer microdollars.",'',
       '## Next experiment','',
       'For a real controlled trial, randomize or otherwise predefine comparable cohorts; preserve task semantics and workload mix; observe raw latency distributions, errors, saturation and operational burden; pre-register rollback thresholds. Validate telemetry completeness and actual contract prices. Recheck costs with uncertainty, rather than converting this simulation into an ROI promise.','',
-      '## Limitations','']+['- '+x for x in result['limits']]
+      '## Data and methodology','','Fictional prices and simulated telemetry; cost changes are modeled comparisons, not measured production savings.','','## Limitations','']+['- '+x for x in result['limits']]
     return '\n'.join(lines)+'\n'
 
 def build(out:Path,seed=42062,days=7):

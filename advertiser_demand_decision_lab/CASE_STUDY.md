@@ -1,6 +1,6 @@
 # A defensible campaign-planning investigation
 
-Independent synthetic portfolio demonstration by Brandon Crain, developed with AI assistance. All advertisers, events and outcomes are fictional. No Netflix, Samsung or client data; no production results or causal lift claimed.
+Campaign-planning analytics that connects funnel bottlenecks, advertiser mix and recovery assumptions to a conditional investigation priority.
 
 ## Decision
 
@@ -41,3 +41,7 @@ The original examines fictional viewing exposure and return. This separate entry
 Validate telemetry against an independent source and inspect who is excluded. Interview or review sampled advertisers at each bottleneck. Add intervention costs and a common terminal outcome before optimizing value. Account for repeat attempts, campaign complexity, intent, seasonality and supply constraints. Predefine a prospective evaluation, primary metric and quality guardrails. Those steps address the current uncertainty; adding a complex model or agent without them would not make the recommendation more defensible.
 
 Owner review: explain the grain, fixed weights, missingness gate, mix-shift example, score-unit limitation and one reason the recommended priority changes. Run the dashboard and review both exports before describing this as demonstrated portfolio competence.
+
+## Data and methodology
+
+All advertisers, events and outcomes are fictional. No employer or client data is used. Scenario results are designed diagnostic examples, not measured production results or causal effects.

@@ -1,11 +1,9 @@
 # New Content Experience Measurement Lab
 
-**Independent portfolio demonstration · Synthetic data**
+
 
 An end-to-end Python/SQL example of defining useful product metrics, repairing
 telemetry, and explaining why a persuasive dashboard result is not a causal claim.
-Prepared for Brandon Crain's analytics engineering portfolio. No Netflix, Samsung,
-client, account, or personal viewing data is used. Not affiliated with Netflix.
 
 ## The decision
 
@@ -103,10 +101,10 @@ output/                   generated reproducible example outputs
 
 ## Implementation notes
 
-Developed with AI assistance. This owner-approved portfolio publication does not
-establish past employment experience, production deployment, or sole unaided
-authorship. Review and run the implementation before representing it as
-demonstrated competence.
+The telemetry is synthetic and reproducible from the documented seed. No employer,
+client or personal viewing data is used. Development used AI assistance; SQL,
+tests and the walkthrough make the implementation inspectable. Results describe
+the simulation, not production impact or causal lift.
 
 Download [the two-page selected-work-samples PDF](output/Brandon_Crain_Selected_Work_Samples.pdf).
 GitHub displays the HTML source; download [the offline dashboard](output/dashboard.html)

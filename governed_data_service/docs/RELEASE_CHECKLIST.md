@@ -1,6 +1,6 @@
 # Release boundary
 
-This is an independent synthetic, AI-assisted demonstration. It is not an employer implementation, sanitized production extract, production deployment or proof of past tool tenure.
+Release checks cover the local review workflow, data integrity and recovery behavior. Inspection data and rules are synthetic; production authentication and distributed deployment remain outside scope.
 
 Before sharing: read OWNER_WALKTHROUGH.md and be ready to explain the publication pointer, retry identity, stale-revision check, schema compatibility and demo authentication boundary.
 

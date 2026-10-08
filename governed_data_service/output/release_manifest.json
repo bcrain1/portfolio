@@ -8,8 +8,8 @@
     "bytes": 552
   },
   "README.md": {
-    "sha256": "19efe0155d318be0824e14ca67e9f10631f90c2f5b20d7327b66c2c2573421c1",
-    "bytes": 2738
+    "sha256": "9450ea027d38212ac0fbb748997b40659977e1f2d38ccd70e31111cea38f9913",
+    "bytes": 2691
   },
   "requirements.txt": {
     "sha256": "19642fc539c86b7fcb5f3fd026906f873e5b6f528e2aaf591ebb9d4a782a1dc6",
@@ -32,12 +32,12 @@
     "bytes": 3466
   },
   "build_summary.py": {
-    "sha256": "6f596b9ca0e0711bc427f43445c91f175603f984da54c44ca6f66bf2b0073913",
-    "bytes": 6309
+    "sha256": "92d459c1b43109cec17e4e44766bf1c23dd67b914771bbd32cad5a297bcad3c4",
+    "bytes": 6345
   },
   "static/index.html": {
-    "sha256": "3abb944625c2874b3ac1d8604f2e89d7ce411f396829eaaec424975a2c4cb253",
-    "bytes": 15770
+    "sha256": "b801c65917eb04c824421b2b3036622786a8c0dfee63b19deb1c7ce65a002b00",
+    "bytes": 15772
   },
   "tests/test_service.py": {
     "sha256": "b910cf53c0301be9ba4613c57ff3a1d59f7aa867b5ae3656bfc2c68574490419",
@@ -56,16 +56,16 @@
     "bytes": 3884
   },
   "docs/VALIDATION.md": {
-    "sha256": "a2634c71a9d0378d613207750bd2efa062f24aea6e3f08247a4bc37fdb63cca5",
-    "bytes": 3590
+    "sha256": "1fe47548a01e417466a6488f41c8d9ae8a099c13389d8c7d58bad9d2a7b68312",
+    "bytes": 3627
   },
   "docs/RELEASE_CHECKLIST.md": {
-    "sha256": "22d5132074e385c88dee595f778598e7c6cebe7ef47914b028e4cdaba39db472",
-    "bytes": 1301
+    "sha256": "cf7dee8c15c116048c486dbdd82f6efea5e4faecd68b87c68700c2b8f2a4c049",
+    "bytes": 1333
   },
   "output/Brandon_Crain_Governed_Data_Service.pdf": {
-    "sha256": "a07add99fe79c77b9ce3b2b4e4c3a22a6f8bec3b9b92c9d6f39320e294e12f13",
-    "bytes": 5954
+    "sha256": "1c67bb83dff38dd24ceb9fb99ce3fb4072a03d02302db5bfe1e8b31c3ce63725",
+    "bytes": 5862
   },
   "output/release_evidence.json": {
     "sha256": "e4235f788ab5d2501ff70ba1e50c9e3f885d117843f0ddc11a308932118ef6c9",
